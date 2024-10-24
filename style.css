@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("requirments/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 77vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav img {
+    width: 31%;
+    position: relative;
+    z-index: 10;
+    margin-top: 5%;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: calc(100% - 72px);
+    flex-direction: column;
+    position: relative;
+    margin-top: -4%;
+    padding: 2%;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 900;
+    font-size: 4vw;
+    margin-top: -0.3vw;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 600;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 0.8vw;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    font-weight: 550;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-red:hover {
+    transition: all 0.1s ease-out;
+    background-color: rgb(216, 20, 20);
+}
+
+.btn-red {
+    background-color: red;
+    font-size: 1.6vw;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+
+.btn-red-si:hover {
+    transition: all 0.1s ease-out;
+    background-color: rgb(216, 20, 20);
+}
+
+.btn-red-si {
+    background-color: red;
+    border-radius: 7px;
+    border: none;
+    color: white;
+}
+
+.hero-buttons {
+    margin-top: 1vw;
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.8);
+    font-size: 1vw;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 1.5vw 15vw 1.5vw 1vw;
+}
+
+.btn-lang {
+    background-color: rgba(23, 23, 23, 0.8);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.now {
+    width: 100%;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    max-width: 77vw;
+    margin: auto;
+    padding-top: 3vw;
+}
+
+.selection {
+    gap: 2vw;
+    max-width: 77vw;
+    margin: auto;
+    padding-top: 2vw;
+    display: flex;
+}
+
+.trend {
+    height: fit-content;
+    background-color: black;
+}
+
+.btn2 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(23, 23, 23, 0.8);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: 0.01 solid white;
+}
+
+.selection2 {
+    max-width: 76vw;
+    margin: auto;
+    margin-top: 3vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hdr,
+.indian2,
+.maharaja,
+.king,
+.union {
+    height: 20vw;
+    width: 14vw;
+    border-radius: 12px;
+    border: none;
+    background-size: cover;
+}
+
+.hdr {
+    background-image: url("requirments/hdr.webp");
+}
+
+.indian2 {
+    background-image: url("requirments/indian2.webp");
+}
+
+.maharaja {
+    background-image: url("requirments/maharaja.webp");
+}
+
+.king {
+    background-image: url("requirments/kingsman.webp");
+}
+
+.union {
+    background-image: url("requirments/union.webp");
+}
+
+.hdr:hover,
+.indian2:hover,
+.maharaja:hover,
+.king:hover,
+.union:hover {
+    transition: all 0.28s ease-out;
+    transform: scale(1.1);
+}
+
+.bx {
+    background-color: rgb(29, 26, 51);
+    height: 25vw;
+    width: 18vw;
+    border-radius: 12px;
+    border: none;
+}
+
+.bx1con,
+.bx2con,
+.bx3con,
+.bx4con {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 1.5vw;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.con1,
+.con2,
+.con3,
+.con4 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    margin-top: -0.5vw;
+    padding: 0 1vw;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.faq {
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.questions {
+    max-width: 60vw;
+    margin-left: 12vw;
+    margin-right: auto;
+    height: 5.4vw;
+    background-color: rgb(45, 45, 45);
+    margin-top: 0.5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    font-size: 1.5vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.questions:hover {
+    transition: all 0.3s ease-out;
+    background-color: rgb(73, 72, 72);
+}
+
+.ask {
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.hb2 input {
+    background-color: rgba(23, 23, 23, 0.8);
+    font-size: 1vw;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 1.5vw 24vw 1.5vw 1vw;
+    margin-left: -25vw;
+}
+
+.call {
+    padding: 2vw;
+    width: 73vw;
+    font-size: 1vw;
+    font-weight: 500;
+    color: rgb(166, 166, 166);
+}
+
+.d1 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 60vw;
+    height: 9vw;
+    margin: auto;
+
+    padding: 2vw 3vw;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.fot {
+    display: flex;
+    gap: 1vw;
+    max-width: 87vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.fot a {
+    color: rgb(166, 166, 166);
+}
+
+.eng {
+    max-width: 72vw;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.btn-eng {
+    padding: 0.5vw 2vw;
+    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        height: auto;
+    }
+
+    nav img {
+        width: 30%;
+        margin-top: 2vw;
+    }
+
+    nav button {
+        margin-top: -1rem;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .sign-in {
+        font-size: 2.5vw;
+    }
+
+    .hero {
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 7vw;
+    }
+
+    .hero> :nth-child(3),
+    .hero> :nth-child(4) {
+        font-size: 4vw;
+    }
+
+    .btn-red {
+        font-size: 4vw;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .hero-buttons input {
+        width: 40vw;
+        font-size: 2vw;
+    }
+
+    .now {
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .selection {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .selection2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .hdr,
+    .indian2,
+    .maharaja,
+    .king,
+    .union {
+        height: 50vw;
+        width: 60vw;
+        margin: 2vw;
+    }
+
+    .bx {
+        width: 69vw;
+        height: 44vw;
+        margin-bottom: 1rem;
+
+    }
+
+    .bx1con,
+    .bx2con,
+    .bx3con,
+    .bx4con {
+        font-size: 5vw;
+    }
+
+    .con1,
+    .con2,
+    .con3,
+    .con4 {
+        font-size: 3vw;
+    }
+
+    .questions {
+        height: auto;
+        padding: 1rem;
+        font-size: 4vw;
+        max-width: 69vw;
+    }
+
+    .ask {
+        font-size: 3.5vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .call {
+        width: 80vw;
+        font-size: 3vw;
+        padding: 1rem;
+    }
+
+    .d1 {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .fot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .eng {
+        max-width: 90vw;
+        margin-top: 1rem;
+    }
+
+    .btn-eng {
+        font-size: 3vw;
+        padding: 1rem 2rem;
+    }
+
+    .hb2 input {
+        padding: 1rem;
+        font-size: 3vw;
+        margin-left: 0;
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 866px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    nav span {
+
+        height: 12vw;
+        font-size: 4.7rem;
+    }
+
+    .country,
+    .shows {
+        padding: 1.5vw;
+        font-size: 2vw;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    nav img {
+        width: 55%;
+        margin-top: 2.5rem;
+    }
+
+    .main input {
+        width: 35vw;
+        padding: 2vw;
+        font-size: 0.9rem;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 5vw;
+    }
+
+    .hero> :nth-child(3),
+    .hero> :nth-child(4) {
+        font-size: 2.5vw;
+    }
+
+    .btn-red,
+    .btn-red-si {
+        font-size: 2.2vw;
+    }
+
+    .now {
+        font-size: 4vw;
+    }
+
+
+    .selection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .selection2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .hdr,
+    .indian2,
+    .maharaja,
+    .king,
+    .union {
+        height: 41vw;
+        width: 34vw;
+        margin: 2vw;
+    }
+
+    .btn-lang {
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    .bx {
+        height: 45vw;
+        margin: 1vw 1vw;
+        width: 36vw;
+    }
+
+    .bx1con,
+    .bx2con,
+    .bx3con,
+    .bx4con {
+        font-size: 4vw;
+    }
+
+    .con1,
+    .con2,
+    .con3,
+    .con4 {
+        font-size: 2.5vw;
+    }
+
+    .questions {
+        height: 10vw;
+        padding: 1rem;
+        font-size: 3vw;
+
+    }
+
+    .ask {
+        font-size: 3vw;
+    }
+
+    .call {
+        width: 80vw;
+        font-size: 2.5vw;
+        padding: 1rem;
+    }
+
+    .d1 {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .fot {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .eng {
+        max-width: 90vw;
+        margin-top: 2rem;
+    }
+
+    .btn-eng {
+        font-size: 3vw;
+        padding: 0.8rem 2rem;
+    }
+
+
+    .hb2 input {
+        padding: 1rem;
+        font-size: 2vw;
+        margin-left: 0;
+        width: 50%
+    }
+
+}
+
+@media only screen and (min-width: 867px) and (max-width: 874px) {
+    nav img {
+        width: 51%;
+        margin-top: 8%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .sign-in {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        display: flex;
+        width: 100%;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 4vw;
+    }
+
+    .hero> :nth-child(3),
+    .hero> :nth-child(4) {
+        font-size: 2vw;
+    }
+
+
+    .btn-red {
+        font-size: 2vw;
+    }
+
+    .now {
+        font-size: 3.5vw;
+    }
+
+    .selection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .selection2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .hdr,
+    .indian2,
+    .maharaja,
+    .king,
+    .union {
+        height: 30vw;
+        width: 20vw;
+        margin: 2vw;
+    }
+
+
+
+    .bx {
+        width: 30vw;
+        height: 35vw;
+        margin: 2vw;
+    }
+
+    .bx1con,
+    .bx2con,
+    .bx3con,
+    .bx4con {
+        font-size: 3vw;
+    }
+
+    .con1,
+    .con2,
+    .con3,
+    .con4 {
+        font-size: 1.8vw;
+    }
+
+    .questions {
+        height: auto;
+        padding: 1rem;
+        font-size: 2vw;
+    }
+
+    .ask {
+        font-size: 2vw;
+    }
+
+    .call {
+        width: 80vw;
+        font-size: 2vw;
+        padding: 1rem;
+    }
+
+    .d1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .fot {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        max-width: 87vw;
+    }
+
+    .eng {
+        max-width: 80vw;
+        margin-top: 2rem;
+    }
+
+    .btn-eng {
+        font-size: 2.5vw;
+        padding: 1.4rem 1.5rem;
+    }
+
+    .hb2 input {
+        padding: 1rem;
+        font-size: 2vw;
+        margin-left: 0;
+        width: 70%;
+    }
+}
